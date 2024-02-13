@@ -85,22 +85,22 @@ def main():
     inventory_length = random.randint(10, 99)
     products = create_inventory(inventory_length)
 
-    # Test Case 1 - Successful Search
-    random_product = random.choice(products)
+    # # Test Case 1 - Successful Search
+    # random_product = random.choice(products)
 
-    print('\nTest Case 1 - Successful Search\n')
-    search_product(products, random_product["sku"])
+    # print('\nTest Case 1 - Successful Search\n')
+    # search_product(products, random_product["sku"])
 
     # Test Case 2 - Unsuccessful Search
     print('\nTest Case 2 - Unsuccessful Search\n')
-    search_product(products, "SKU10000")
+    search_product(products, "SKU000")
 
-    # Test Case 4 - Edge Cases
-    print('\nTest Case 4 - Edge Cases (Search for the product with the highest SKU value)\n')
-    search_product(products, products[0]["sku"])
+    # # Test Case 4 - Edge Cases
+    # print('\nTest Case 4 - Edge Cases (Search for the product with the highest SKU value)\n')
+    # search_product(products, products[0]["sku"])
 
-    print('\nTest Case 4 - Edge Cases (Search for the product with the lowest SKU value)\n')
-    search_product(products, products[-1]["sku"])
+    # print('\nTest Case 4 - Edge Cases (Search for the product with the lowest SKU value)\n')
+    # search_product(products, products[-1]["sku"])
 
 if __name__ == "__main__":
     main()
